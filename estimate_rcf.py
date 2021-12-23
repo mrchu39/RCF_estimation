@@ -7,40 +7,40 @@ from astropy.cosmology import FlatLambdaCDM
 
 cosmo = FlatLambdaCDM(H0=67.8, Om0=0.308, Tcmb0=3)
 
-with open('sn_kde.pkl', 'rb') as f:
+with open('pickles/sn_kde.pkl', 'rb') as f:
     sn_kde = pickle.load(f)
 
-with open('red_kde.pkl', 'rb') as f:
+with open('pickles/red_kde.pkl', 'rb') as f:
     red_kde = pickle.load(f)
 
-with open('sn_kde_100.pkl', 'rb') as f:
+with open('pickles/sn_kde_100.pkl', 'rb') as f:
     sn_kde_100 = pickle.load(f)
 
-with open('red_kde_100.pkl', 'rb') as f:
+with open('pickles/red_kde_100.pkl', 'rb') as f:
     red_kde_100 = pickle.load(f)
 
-with open('sn_kde_200-300.pkl', 'rb') as f:
+with open('pickles/sn_kde_200-300.pkl', 'rb') as f:
     sn_kde_100_200 = pickle.load(f)
 
-with open('red_kde_200-300.pkl', 'rb') as f:
+with open('pickles/red_kde_200-300.pkl', 'rb') as f:
     red_kde_100_200 = pickle.load(f)
 
-with open('sn_kde_200-300.pkl', 'rb') as f:
+with open('pickles/sn_kde_200-300.pkl', 'rb') as f:
     sn_kde_200_300 = pickle.load(f)
 
-with open('red_kde_200-300.pkl', 'rb') as f:
+with open('pickles/red_kde_200-300.pkl', 'rb') as f:
     red_kde_200_300 = pickle.load(f)
 
-with open('sn_kde_300-400.pkl', 'rb') as f:
+with open('pickles/sn_kde_300-400.pkl', 'rb') as f:
     sn_kde_300_400 = pickle.load(f)
 
-with open('red_kde_300-400.pkl', 'rb') as f:
+with open('pickles/red_kde_300-400.pkl', 'rb') as f:
     red_kde_300_400 = pickle.load(f)
 
-with open('sn_kde_400.pkl', 'rb') as f:
+with open('pickles/sn_kde_400.pkl', 'rb') as f:
     sn_kde_400 = pickle.load(f)
 
-with open('red_kde_400.pkl', 'rb') as f:
+with open('pickles/red_kde_400.pkl', 'rb') as f:
     red_kde_400 = pickle.load(f)
 
 def get_rcf_ind(ra, dec, redshift=None): # In degrees
